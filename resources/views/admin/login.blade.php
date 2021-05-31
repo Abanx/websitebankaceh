@@ -11,7 +11,6 @@
 
     </head>
     <body>
-        <h1>Admin Login</h1>
         <div id="login_div"></div>
         <script src="{{mix('js/app.js')}}"></script>
     </body>

@@ -1,0 +1,98 @@
+
+.menu-bar{
+    background-color:transparent;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.active, .menu-bar ul li:hover {
+    background-color: rgb(222, 241, 241); 
+    border-radius: 2px;
+}
+
+
+.sub-menu1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    background-color:lightgray;
+    z-index: 10;
+    margin-top: 3px;
+    margin-left: -5px;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li{
+    width: 120px;
+    padding: 5px;
+    text-align: left;
+    margin-left: -20px;
+    border-bottom: 1px solid #fff;
+    /* background: lightskyblue; */
+    border-radius: 0;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu1 ul li:hover{
+    background-color: transparent;
+}
+
+.sub-menu1 ul li:hover a{
+    color: red;
+}
+
+@media all and (max-width:600px){
+    .menu-bar ul li{
+        width: 70px;
+        margin: 1px;
+        padding: 1px;
+    }
+}
+@media all and (min-width:600px) and (max-width:960px){
+    .menu-bar ul li{
+        width: 90px;
+        margin: 2px;
+        padding: 2px;
+    }
+    .menu-bar ul li a{
+        font-size: 10px;
+    }
+}
+@media all and (min-width:960px) and (max-width:1280px){
+    .menu-bar ul li{
+        width: 100px;
+        margin: 3px;
+        padding: 3px;
+    }
+    .menu-bar ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+    }
+}
+
