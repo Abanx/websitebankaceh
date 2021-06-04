@@ -14,5 +14,7 @@
 
 require('./components/Example');
 require('./components/HomePage');
+require('./components/IndexBerita');
 require('./components/AdminLogin');
 require('./components/AdminDashboard');
+require('./components/ShowBerita');

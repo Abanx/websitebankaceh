@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/beranda/berita', function () {
+    return view('berita.index');
+});
+
+Route::get('/beranda/berita/{id}/{judul}', function ($id, $judul) {
+    return view('berita.show')->with(['id'=>$id, 'judul'=>$judul]);
+});
+
 Route::get('/admin', function(){
     return view('admin.login');
 });

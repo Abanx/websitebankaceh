@@ -11,8 +11,7 @@ export default function Kerjasama() {
             textAlign:"center",
             padding: 5,
             color:"white",
-            backgroundColor:"darkgreen",
-            opacity: 0.6
+            backgroundColor:"green"
         },
         image : {
             width:"100%",

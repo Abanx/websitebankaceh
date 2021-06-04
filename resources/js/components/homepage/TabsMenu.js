@@ -13,8 +13,8 @@ function TabsMenu() {
     }
     return (
         <Grid container xs={12} style={{backgroundColor:"white"}}>
-            <AppBar position="static">
-                <Tabs value={selectedTab} onChange={handleChange} >
+            <AppBar position="static" style={{zIndex:1}}>
+                <Tabs value={selectedTab} onChange={handleChange} style={{backgroundColor:"green"}}>
                     <Tab label="Berita" />
                     <Tab label="Pengumuman" />
                     <Tab label="Lelang Pengadaan"/>

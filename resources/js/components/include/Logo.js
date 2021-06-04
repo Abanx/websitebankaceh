@@ -31,10 +31,12 @@ export default function Logo() {
     }));
 
     const classes = useStyles();
-
+    const logoClick = ()=>{
+        window.location = window.location.origin;
+    }
     return (
-        <div>
-            <img src="images/bank_aceh_oke.png" className={classes.logo} alt="logo"/>
+        <div onClick={logoClick}>
+            <img src={window.location.origin + "/images/bank_aceh_oke.png"} className={classes.logo} alt="logo"/>
         </div>
     )
 }
