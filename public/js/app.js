@@ -26788,6 +26788,10 @@ __webpack_require__(/*! ./components/AdminDashboard */ "./resources/js/component
 
 __webpack_require__(/*! ./components/ShowBerita */ "./resources/js/components/ShowBerita.js");
 
+__webpack_require__(/*! ./components/blogs/BlogPage */ "./resources/js/components/blogs/BlogPage.js");
+
+__webpack_require__(/*! ./components/blogs/BlogList */ "./resources/js/components/blogs/BlogList.js");
+
 /***/ }),
 
 /***/ "./resources/js/components/AdminDashboard.js":
@@ -26804,7 +26808,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Button/Button.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/IconButton/IconButton.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Facebook */ "./node_modules/@material-ui/icons/Facebook.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -26818,6 +26826,51 @@ function AdminDashboard() {
       variant: "contained",
       color: "primary",
       children: "Tombol"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5__.default, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      container: true,
+      xs: 12,
+      md: 12,
+      justify: "center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        item: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5__.default, {})
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        item: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5__.default, {
+            style: {
+              fontSize: 40,
+              color: "blue"
+            }
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        item: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("iframe", {
+          width: "100%",
+          height: "315",
+          src: "https://www.youtube.com/embed/fyDFdfx1SNA",
+          title: "YouTube video player",
+          frameborder: "0",
+          allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+          allowfullscreen: true
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        item: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("iframe", {
+          width: "100%",
+          height: "315",
+          src: "https://www.youtube.com/embed/8mz7hn-RJyA",
+          title: "YouTube video player",
+          frameborder: "0",
+          allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+          allowfullscreen: true
+        })
+      })]
     })]
   });
 }
@@ -26918,7 +26971,7 @@ if (document.getElementById('example')) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "default": () => (/* binding */ HomePage)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
@@ -26945,8 +26998,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-function HomePage(props) {
+function HomePage() {
   var useStyles = (0,_material_ui_core__WEBPACK_IMPORTED_MODULE_10__.default)(function (theme) {
     return {
       root: {
@@ -26999,9 +27051,7 @@ function HomePage(props) {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(_include_Footer__WEBPACK_IMPORTED_MODULE_6__.default, {})
     })]
   });
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);
+} //export default HomePage;
 
 if (document.getElementById('homepage_div')) {
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_9__.jsx)(HomePage, {}), document.getElementById('homepage_div'));
@@ -27122,7 +27172,6 @@ function ShowBerita(props) {
     xs: 12,
     justify: "center",
     spacing: 0,
-    className: classes.root,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
       item: true,
       xs: 12,
@@ -27131,7 +27180,7 @@ function ShowBerita(props) {
       item: true,
       xs: 12,
       style: {
-        minHeight: 400
+        minHeight: 350
       },
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_berita_BeritaPage__WEBPACK_IMPORTED_MODULE_4__.default, {})
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
@@ -27198,7 +27247,7 @@ function BeritaCardHorizontal() {
           color: "textPrimary",
           children: "02 Juni 2021, 14:33 Wib"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-          href: "#",
+          href: window.location.origin + "/berita/page",
           color: "primary",
           children: "PENGUMUMAN PEMBIAYAAN YANG BERDAMPAK COVID-19"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
@@ -27232,11 +27281,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ BeritaLists)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Breadcrumbs/Breadcrumbs.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/List/List.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/ListItem/ListItem.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/styles/useTheme.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/useMediaQuery/useMediaQuery.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Breadcrumbs/Breadcrumbs.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/List/List.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/ListItem/ListItem.js");
+/* harmony import */ var _material_ui_lab_Pagination__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/lab/Pagination */ "./node_modules/@material-ui/lab/esm/Pagination/Pagination.js");
 /* harmony import */ var _homepage_bloks_menu_BeritaCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../homepage/bloks_menu/BeritaCard */ "./resources/js/components/homepage/bloks_menu/BeritaCard.js");
 /* harmony import */ var _BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BeritaCardHorizontal */ "./resources/js/components/berita/BeritaCardHorizontal.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
@@ -27246,37 +27298,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function BeritaLists() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+  var theme = (0,_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default)();
+  var isXS = (0,_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default)(theme.breakpoints.down('xs'));
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
     container: true,
     justify: "center",
     spacing: 2,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
-      sm: 12,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
         "aria-label": "breadcrumb",
         style: {
           backgroundColor: "#FEF5E7",
           padding: 10
         },
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
           color: "textPrimary",
           children: "Beranda"
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
           color: "textPrimary",
           children: "Berita"
         })]
       })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), !isXS ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       sm: 3,
       style: {
         backgroundColor: "lightgray"
       },
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(ListMenu, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }) : "", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
+      xs: 12,
       sm: 9,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(ListContent, {})
     })]
@@ -27284,19 +27340,16 @@ function BeritaLists() {
 }
 
 function ListMenu() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
-    style: {
-      backgroundColor: "white"
-    },
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__.default, {
     component: "nav",
     "aria-label": "main mailbox folders",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__.default, {
       button: true,
       children: "Berita"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__.default, {
       button: true,
       children: "Pengumuman"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__.default, {
       button: true,
       children: "Lelang"
     })]
@@ -27304,35 +27357,43 @@ function ListMenu() {
 }
 
 function ListContent() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
     container: true,
     justify: "center",
     xs: 12,
     spacing: 2,
     style: {
-      backgroundColor: "white",
       marginBottom: 5
     },
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__.default, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__.default, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__.default, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__.default, {})
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
       item: true,
       md: 12,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_BeritaCardHorizontal__WEBPACK_IMPORTED_MODULE_2__.default, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      item: true,
+      xs: 12,
+      style: {
+        paddingBottom: 10
+      },
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_lab_Pagination__WEBPACK_IMPORTED_MODULE_11__.default, {
+        count: 10
+      })
     })]
   });
 }
@@ -27572,6 +27633,232 @@ react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function (_ref, ref) {
     }))]
   });
 }));
+
+/***/ }),
+
+/***/ "./resources/js/components/blogs/BlogList.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/blogs/BlogList.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BlogList)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Breadcrumbs/Breadcrumbs.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var _include_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../include/Navbar */ "./resources/js/components/include/Navbar.js");
+/* harmony import */ var _include_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../include/Footer */ "./resources/js/components/include/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+
+function BlogList() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+    container: true,
+    justify: "center",
+    spacing: 2,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      item: true,
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_include_Navbar__WEBPACK_IMPORTED_MODULE_2__.default, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      item: true,
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
+        "aria-label": "breadcrumb",
+        style: {
+          backgroundColor: "#FEF5E7",
+          padding: 10
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+          color: "textPrimary",
+          children: "Level 1"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+          color: "textPrimary",
+          children: "Level 2"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+          color: "textPrimary",
+          children: "Level 3"
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      item: true,
+      xs: 12,
+      style: {
+        minHeight: 350
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+        variant: "h5",
+        style: {
+          textAlign: "center"
+        },
+        color: "textPrimary",
+        children: "List of Pages"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("ul", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+            href: "###",
+            children: "halaman 1"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+            href: "###",
+            children: "halaman 2"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("a", {
+            href: "###",
+            children: "halaman 3"
+          })
+        })]
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      item: true,
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_include_Footer__WEBPACK_IMPORTED_MODULE_3__.default, {})
+    })]
+  });
+}
+
+if (document.getElementById('bloglist_div')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(BlogList, {}), document.getElementById('bloglist_div'));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/blogs/BlogPage.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/blogs/BlogPage.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BlogPage)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Breadcrumbs/Breadcrumbs.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Typography/Typography.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _include_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../include/Navbar */ "./resources/js/components/include/Navbar.js");
+/* harmony import */ var _include_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../include/Footer */ "./resources/js/components/include/Footer.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]); if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
+function BlogPage(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+      _useState2 = _slicedToArray(_useState, 2),
+      data = _useState2[0],
+      setData = _useState2[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().get("http://dev.semangatngedrakor.my.id/api/blog/".concat(props.id)).then(function (res) {
+      console.log(res.data);
+      setData(res.data.data);
+    });
+  }, []);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+    container: true,
+    justify: "center",
+    spacing: 2,
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      item: true,
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_Navbar__WEBPACK_IMPORTED_MODULE_3__.default, {})
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      item: true,
+      xs: 12,
+      sm: 11,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__.default, {
+        "aria-label": "breadcrumb",
+        style: {
+          backgroundColor: "#FEF5E7",
+          padding: 10
+        },
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__.default, {
+          color: "textPrimary",
+          children: props.path
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__.default, {
+          color: "textPrimary",
+          children: props.id
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      item: true,
+      xs: 12,
+      sm: 11,
+      style: {
+        minHeight: 350
+      },
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__.default, {
+        variant: "h5",
+        style: {
+          textAlign: "center"
+        },
+        color: "textPrimary",
+        children: data != null ? data.title : ""
+      }), data != null ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        style: {
+          margin: 10
+        },
+        dangerouslySetInnerHTML: {
+          __html: data.body
+        }
+      }) : "fetching.."]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+      item: true,
+      xs: 12,
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_Footer__WEBPACK_IMPORTED_MODULE_4__.default, {})
+    })]
+  });
+}
+
+if (document.getElementById('blogpage_div')) {
+  var el = document.getElementById('blogpage_div');
+  var props = Object.assign({}, el.dataset);
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(BlogPage, _objectSpread({}, props)), document.getElementById('blogpage_div'));
+}
 
 /***/ }),
 
@@ -27847,9 +28134,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ ProfilVideos)
 /* harmony export */ });
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -27857,16 +28145,15 @@ __webpack_require__.r(__webpack_exports__);
 function ProfilVideos() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.default, {
     container: true,
-    direction: "row-reverse",
     justify: "center",
     spacing: 2,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__.default, {
       item: true,
       md: 6,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("iframe", {
-        width: "560",
+        width: "100%",
         height: "315",
-        src: "https://www.youtube.com/embed/fyDFdfx1SNA",
+        src: "https://www.youtube.com/embed/8mz7hn-RJyA",
         title: "YouTube video player",
         frameborder: "0",
         allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
@@ -27876,9 +28163,9 @@ function ProfilVideos() {
       item: true,
       md: 6,
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("iframe", {
-        width: "560",
+        width: "100%",
         height: "315",
-        src: "https://www.youtube.com/embed/8mz7hn-RJyA",
+        src: "https://www.youtube.com/embed/fyDFdfx1SNA",
         title: "YouTube video player",
         frameborder: "0",
         allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
@@ -28625,7 +28912,8 @@ function CascadingHoverMenus2(props) {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__.default, {
           onClick: function onClick() {
             popupState.close;
-            item.title === "Berita" ? window.location = window.location.origin + "/beranda/berita" : window.location = "https://www.google.com";
+            console.log("Close: " + item.path);
+            window.location = window.location.origin + item.path + "/" + item.type + "/" + item.id;
           },
           children: item.title
         });
@@ -28635,7 +28923,7 @@ function CascadingHoverMenus2(props) {
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
     style: {
-      height: 600
+      height: 50
     },
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__.default, _objectSpread(_objectSpread({
       variant: "text",
@@ -28740,141 +29028,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ DropdownMenu)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
-/* harmony import */ var _dropdownmenu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdownmenu.css */ "./resources/js/components/include/dropdownmenu.css");
-/* harmony import */ var _fontsource_roboto__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fontsource/roboto */ "./node_modules/@fontsource/roboto/index.css");
-/* harmony import */ var _berita_CascadingHoverMenus__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../berita/CascadingHoverMenus */ "./resources/js/components/berita/CascadingHoverMenus.js");
-/* harmony import */ var _include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../include/CascadingHoverMenus2 */ "./resources/js/components/include/CascadingHoverMenus2.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _fontsource_roboto__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fontsource/roboto */ "./node_modules/@fontsource/roboto/index.css");
+/* harmony import */ var _include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../include/CascadingHoverMenus2 */ "./resources/js/components/include/CascadingHoverMenus2.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
  //import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
 
 
-
-
-
-
-var menu1 = {
-  title: "Beranda",
-  isParent: "Y",
-  children: [{
-    title: "Berita",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Lelang",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Pengumuman",
-    isParent: "Y",
-    children: [{
-      title: "Internal",
-      isParent: "No",
-      children: []
-    }, {
-      title: "External",
-      isParent: "No",
-      children: []
-    }]
-  }]
-};
-var menu2 = {
-  title: "Tentang Kami",
-  isParent: "Y",
-  children: [{
-    title: "Sejarah Singkat",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Visi, Misi & Motto",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Logo Bank Aceh",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Manajemen Periode Berjalan",
-    isParent: "N",
-    children: []
-  }]
-};
-var menu3 = {
-  title: "Investor Relation",
-  isParent: "Y",
-  children: [{
-    title: "Laporan Keuangan",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Laporan Tahunan",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Laporan GCG",
-    isParent: "N",
-    children: []
-  }, {
-    title: "Pemodalan dan Pemegang Saham",
-    isParent: "N",
-    children: []
-  }]
-};
-var menu4 = {
-  title: "Produk & Layanan",
-  isParent: "Y",
-  children: [{
-    title: "Dana",
-    isParent: "Y",
-    children: [{
-      title: "Giro Bank Aceh",
-      isParent: "N",
-      children: []
-    }, {
-      title: "Deposito Mudharabah",
-      isParent: "N",
-      children: []
-    }]
-  }, {
-    title: "Pembiayaan",
-    isParent: "Y",
-    children: [{
-      title: "Pembiayaan Mudharabah",
-      isParent: "N",
-      children: []
-    }, {
-      title: "Pembiayaan Musyarakah",
-      isParent: "N",
-      children: []
-    }]
-  }, {
-    title: "Layanan",
-    isParent: "Y",
-    children: [{
-      title: "RAHN (Gadai Emas)",
-      isParent: "N",
-      children: []
-    }, {
-      title: "Bank Garansi Syariah",
-      isParent: "N",
-      children: []
-    }]
-  }]
-};
-var menu5 = {
-  title: "Jaringan",
-  isParent: "Y",
-  children: [{
-    title: "Jaringan Operasional",
-    isParent: "N",
-    children: []
-  }]
-};
 function DropdownMenu(props) {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
     container: true,
     justify: "flex-end",
     md: 12,
@@ -28882,67 +29047,16 @@ function DropdownMenu(props) {
       maxHeight: 40,
       marginRight: 50
     },
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-      item: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__.default, {
-        menu: menu1
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-      item: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__.default, {
-        menu: menu2
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-      item: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__.default, {
-        menu: menu3
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-      item: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__.default, {
-        menu: menu4
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-      item: true,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_4__.default, {
-        menu: menu5
-      })
-    })]
+    children: props.menus.map(function (item) {
+      return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__.default, {
+        item: true,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_include_CascadingHoverMenus2__WEBPACK_IMPORTED_MODULE_2__.default, {
+          menu: item
+        })
+      });
+    })
   });
 }
-/*
-
-<div className="menu-bar">
-                <ul>
-                    <li>
-                        <a href="#"><Typography variant="body2">Beranda</Typography></a>
-                        <div className="sub-menu1">
-                            <ul>
-                                <li><a href="#">Berita</a></li>
-                                <li><a href="#">Pengumuman</a></li>
-                                <li><a href="#">Lelang Pengadaan</a></li>
-                                <li><a href="#">Event</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#"><Typography variant="body2">Perusahaan</Typography></a>
-                        <div className="sub-menu1">
-                            <ul>
-                                <li><a href="#">Sejarah</a></li>
-                                <li><a href="#">Visi-Misi</a></li>
-                                <li><a href="#">Target dan Sasaran</a></li>
-                                <li><a href="#">Penghargaan</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="#"><Typography variant="body2">Produk & Layanan</Typography></a></li>
-                    <li><a href="#"><Typography variant="body2">Jaringan</Typography></a></li>
-                    <li><a href="#"><Typography variant="body2">UMKM Corner</Typography></a></li>
-                </ul>
-            </div>
-
-*/
 
 /***/ }),
 
@@ -28990,6 +29104,12 @@ function Footer() {
       hakCipta: {
         backgroundColor: "#808080",
         marginTop: 0
+      },
+      sosmedRoot: {
+        display: 'flex',
+        '& > *': {
+          margin: theme.spacing(1)
+        }
       }
     };
   });
@@ -29011,13 +29131,13 @@ function Footer() {
         },
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-            href: "#",
+            href: "https://www.ojk.go.id/id/Default.aspx",
             color: "textPrimary",
             children: "Otoritas Jasa Keuangan"
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__.default, {
-            href: "#",
+            href: "https://lps.go.id/",
             color: "textPrimary",
             children: "Lembaga Penjamin Simpanan"
           })
@@ -29046,34 +29166,37 @@ function Footer() {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h5", {
         className: classes.title,
         children: "Sosial Media"
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
         container: true,
         justify: "center",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
-          href: "https://www.facebook.com",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_8__.default, {
-            style: {
-              fontSize: 40,
-              color: "blue"
-            }
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
-          href: "https://www.twitter.com",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_9__.default, {
-            style: {
-              fontSize: 40,
-              color: "#259AE4"
-            }
-          })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
-          href: "https://www.instagram.com",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_10__.default, {
-            style: {
-              fontSize: 40,
-              color: "#E425CF"
-            }
-          })
-        })]
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+          className: classes.sosmedRoot,
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
+            href: "https://www.facebook.com",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_8__.default, {
+              style: {
+                fontSize: 40,
+                color: "blue"
+              }
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
+            href: "https://www.twitter.com",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_9__.default, {
+              style: {
+                fontSize: 40,
+                color: "#259AE4"
+              }
+            })
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_7__.default, {
+            href: "https://www.instagram.com",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_10__.default, {
+              style: {
+                fontSize: 40,
+                color: "#E425CF"
+              }
+            })
+          })]
+        })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__.default, {
       item: true,
@@ -29226,43 +29349,95 @@ var menus = [{
   isParent: "Y",
   children: [{
     title: "Berita",
+    id: 0,
     isParent: "N",
+    path: "/beranda/berita",
+    type: "list",
     children: []
   }, {
     title: "Lelang",
+    id: 0,
     isParent: "N",
+    path: "/beranda/lelang",
+    type: "list",
     children: []
   }, {
     title: "Pengumuman",
-    isParent: "Y",
-    children: [{
-      title: "Internal",
-      isParent: "No",
-      children: []
-    }, {
-      title: "External",
-      isParent: "No",
-      children: []
-    }]
+    id: 0,
+    isParent: "N",
+    path: "/beranda/pengumuman",
+    type: "list",
+    children: []
   }]
 }, {
   title: "Tentang Kami",
   isParent: "Y",
   children: [{
     title: "Sejarah Singkat",
+    id: 1,
     isParent: "N",
+    path: "/tentangkami/sejarahsingkat",
+    type: "page",
     children: []
   }, {
     title: "Visi, Misi & Motto",
+    id: 2,
     isParent: "N",
+    path: "/tentangkami/visimisi",
+    type: "page",
     children: []
   }, {
     title: "Logo Bank Aceh",
+    id: 3,
     isParent: "N",
+    path: "/tentangkami/logo",
+    type: "page",
     children: []
   }, {
     title: "Manajemen Periode Berjalan",
+    isParent: "Y",
+    children: [{
+      title: "Dewan Komisaris",
+      isParent: "N",
+      id: 0,
+      path: "tentangkami/manajemen/dewankomisaris",
+      type: "page",
+      children: []
+    }, {
+      title: "Dewan Pengawas Syariah",
+      isParent: "N",
+      id: 0,
+      path: "tentangkami/manajemen/dewanpengawassyariah",
+      type: "page",
+      children: []
+    }, {
+      title: "Direksi",
+      isParent: "N",
+      id: 0,
+      path: "tentangkami/manajemen/direksi",
+      type: "page",
+      children: []
+    }, {
+      title: "Manajemen Eksekutif",
+      isParent: "N",
+      id: 0,
+      path: "tentangkami/manajemen/manajemeneksekutif",
+      type: "page",
+      children: []
+    }]
+  }, {
+    title: "Target & Sasaran",
+    id: 5,
     isParent: "N",
+    path: "/tentangkami/targetsasaran",
+    type: "page",
+    children: []
+  }, {
+    title: "Penghargaan",
+    id: 6,
+    isParent: "N",
+    path: "/tentangkami/penghargaan",
+    type: "page",
     children: []
   }]
 }, {
@@ -29395,14 +29570,12 @@ function Navbar() {
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_Logo__WEBPACK_IMPORTED_MODULE_2__.default, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__.default, {
           container: true,
           justify: "flex-end",
-          children: isSM
-          /*|| menus.length > 6*/
-          ?
-          /*#__PURE__*/
-          (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_13__.default, {
+          children: isSM ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_13__.default, {
             onClick: toggleDrawerStatus,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_14__.default, {})
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_DropdownMenu__WEBPACK_IMPORTED_MODULE_1__.default, {})
+          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_DropdownMenu__WEBPACK_IMPORTED_MODULE_1__.default, {
+            menus: menus
+          })
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_12__.default, {
@@ -29466,58 +29639,12 @@ function recursiveFunc(item) {
           textTransform: "none"
         },
         color: "inherit",
+        href: window.location.origin + item.path + "/" + item.type + "/" + item.id,
         children: item.title
       })
     });
   }
 }
-/*
-
-const menus = [
-        {id:1, title:"Beranda", level:1, order:1, parent:0, isParent:"Y"},
-        {id:2, title:"Perusahaan", level:1, order:2, parent:0, isParent:"Y"},
-        {id:3, title:"Investor Relation", level:1, order:3, parent:0, isParent:"Y"},
-        {id:4, title:"Produk & Layanan", level:1, order:4, parent:0, isParent:"Y"},
-        {id:5, title:"Jaringan Kantor", lavel:1, order:5, parent:0, isParent:"Y"},
-        {id:6, title:"FAQ", level:1, order:6, parent:0, isParent:"N"}
-      ];
-      
-<SubMenu title="Beranda">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" href={window.location.origin+"/beranda/berita"}>Berita</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Pengumuman</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Lelang</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Tentang Kami">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Sejarah Singkat</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Visi, Misi & Motto</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Logo Bank Aceh</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Manajemen Periode Berjalan</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Investor Relation">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan Keuangan</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan Tahunan</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan GCG</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Pemodalan & Pemegang Saham</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Produk & Layanan">
-                            <SubMenu title="Dana">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Giro Bank Aceh</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Deposito Mudharabah</Button></MenuItem>
-                            </SubMenu>
-                            <SubMenu title="Pembiayaan">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Pembiayaan Muharabah</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Pembiayaan Musyarakah</Button></MenuItem>
-                            </SubMenu>
-                            <SubMenu title="Layanan">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">RAHN (Gadai Emas)</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Bank Garansi Syariah</Button></MenuItem>
-                            </SubMenu>
-                          </SubMenu>
-                          <SubMenu title="Jaringan Kantor">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Jaringan Operasional</Button></MenuItem>
-                          </SubMenu>
-*/
-
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
@@ -29947,30 +30074,6 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".image-gallery {\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n\r\n.image-gallery-slide img {\r\n    width: 100%;\r\n    height: auto;\r\n    /* max-height: 80vh; */\r\n    -o-object-fit: cover;\r\n       object-fit: cover;\r\n    overflow: hidden;\r\n    -o-object-position: center center;\r\n       object-position: center center;\r\n}\r\n\r\n.fullscreen .image-gallery-slide img {\r\n    max-height: 100vh;\r\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/include/dropdownmenu.css":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/include/dropdownmenu.css ***!
-  \********************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n.menu-bar{\r\n    background-color:\"white\";\r\n    text-align: center;\r\n}\r\n\r\n.menu-bar ul{\r\n    display: inline-flex;\r\n    list-style: none;\r\n}\r\n\r\n.menu-bar ul li{\r\n    min-width: 120px;\r\n    white-space: nowrap;\r\n    margin: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n.menu-bar ul li a{\r\n    text-decoration: none;\r\n    color: black;\r\n}\r\n\r\n.active, .menu-bar ul li:hover {\r\n    background-color: rgb(222, 241, 241); \r\n    border-radius: 2px;\r\n}\r\n\r\n\r\n.sub-menu1{\r\n    display: none;\r\n}\r\n\r\n.menu-bar ul li:hover .sub-menu1{\r\n    display: block;\r\n    position: absolute;\r\n    background-color:lightgray;\r\n    z-index: 10;\r\n    margin-top: 3px;\r\n    margin-left: -5px;\r\n}\r\n\r\n.menu-bar ul li:hover .sub-menu1 ul{\r\n    display: block;\r\n}\r\n\r\n.menu-bar ul li:hover .sub-menu1 ul li{\r\n    width: 120px;\r\n    padding: 5px;\r\n    text-align: left;\r\n    margin-left: -20px;\r\n    border-bottom: 1px solid #fff;\r\n    /* background: lightskyblue; */\r\n    border-radius: 0;\r\n}\r\n\r\n.menu-bar ul li:hover .sub-menu1 ul li:last-child{\r\n    border-bottom: none;\r\n}\r\n\r\n.menu-bar ul li:hover .sub-menu1 ul li:hover{\r\n    background-color: transparent;\r\n}\r\n\r\n.sub-menu1 ul li:hover a{\r\n    color: red;\r\n}\r\n\r\n@media all and (max-width:600px){\r\n    .menu-bar ul li{\r\n        width: 70px;\r\n        margin: 1px;\r\n        padding: 1px;\r\n    }\r\n}\r\n@media all and (min-width:600px) and (max-width:960px){\r\n    .menu-bar ul li{\r\n        width: 90px;\r\n        margin: 2px;\r\n        padding: 2px;\r\n    }\r\n    .menu-bar ul li a{\r\n        font-size: 10px;\r\n    }\r\n}\r\n@media all and (min-width:960px) and (max-width:1280px){\r\n    .menu-bar ul li{\r\n        width: 100px;\r\n        margin: 3px;\r\n        padding: 3px;\r\n    }\r\n    .menu-bar ul li a{\r\n        text-decoration: none;\r\n        color: black;\r\n        font-size: 12px;\r\n    }\r\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -79854,36 +79957,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_custom_carosel_css_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
-
-/***/ }),
-
-/***/ "./resources/js/components/include/dropdownmenu.css":
-/*!**********************************************************!*\
-  !*** ./resources/js/components/include/dropdownmenu.css ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_dropdownmenu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./dropdownmenu.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/js/components/include/dropdownmenu.css");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_dropdownmenu_css__WEBPACK_IMPORTED_MODULE_1__.default, options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_dropdownmenu_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 

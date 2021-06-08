@@ -18,3 +18,5 @@ require('./components/IndexBerita');
 require('./components/AdminLogin');
 require('./components/AdminDashboard');
 require('./components/ShowBerita');
+require('./components/blogs/BlogPage');
+require('./components/blogs/BlogList');

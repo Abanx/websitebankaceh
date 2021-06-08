@@ -9,7 +9,7 @@ import Footer from './include/Footer';
 import Kerjasama from './homepage/Kerjasama';
 import ProfilVideos from './homepage/ProfilVideos';
 
-function HomePage(props) {
+export default function HomePage() {
     const useStyles = makeStyles((theme) => ({
         root: {
           backgroundColor: "white"
@@ -55,7 +55,7 @@ function HomePage(props) {
     )
 }
 
-export default HomePage;
+//export default HomePage;
 
 if (document.getElementById('homepage_div')) {
     ReactDOM.render(<HomePage/>, document.getElementById('homepage_div'));

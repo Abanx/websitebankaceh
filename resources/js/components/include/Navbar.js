@@ -23,19 +23,26 @@ const menus = [
     title: "Beranda",
     isParent: "Y",
     children: [
-        {title: "Berita", isParent: "N", children: []},
-        {title: "Lelang", isParent: "N", children: []},
-        {title: "Pengumuman", isParent: "Y", children: [{title:"Internal", isParent:"No", children:[]}, {title:"External", isParent:"No", children:[]}]},
+        {title: "Berita", id:0, isParent: "N", path:"/beranda/berita", type:"list", children: []},
+        {title: "Lelang", id:0, isParent: "N", path:"/beranda/lelang", type:"list", children: []},
+        {title: "Pengumuman", id:0, isParent: "N", path:"/beranda/pengumuman", type:"list", children: []},
     ]
   },
   {
     title: "Tentang Kami",
     isParent: "Y",
     children: [
-        {title: "Sejarah Singkat", isParent: "N", children: []},
-        {title: "Visi, Misi & Motto", isParent: "N", children: []},
-        {title: "Logo Bank Aceh", isParent: "N", children: []},
-        {title: "Manajemen Periode Berjalan", isParent: "N", children: []}
+        {title: "Sejarah Singkat", id:1, isParent: "N", path:"/tentangkami/sejarahsingkat", type:"page", children: []},
+        {title: "Visi, Misi & Motto", id:2, isParent: "N", path:"/tentangkami/visimisi", type:"page", children: []},
+        {title: "Logo Bank Aceh", id:3, isParent: "N", path:"/tentangkami/logo", type:"page", children: []},
+        {title: "Manajemen Periode Berjalan", isParent: "Y", children: [
+          {title:"Dewan Komisaris", isParent:"N", id:0, path:"tentangkami/manajemen/dewankomisaris", type:"page", children:[]},
+          {title:"Dewan Pengawas Syariah", isParent:"N", id:0, path:"tentangkami/manajemen/dewanpengawassyariah", type:"page", children:[]},
+          {title:"Direksi", isParent:"N", id:0, path:"tentangkami/manajemen/direksi", type:"page", children:[]},
+          {title:"Manajemen Eksekutif", isParent:"N", id:0, path:"tentangkami/manajemen/manajemeneksekutif", type:"page", children:[]}
+        ]},
+        {title: "Target & Sasaran", id:5, isParent: "N", path:"/tentangkami/targetsasaran", type:"page", children: []},
+        {title: "Penghargaan", id:6, isParent: "N", path:"/tentangkami/penghargaan", type:"page", children: []},
     ]
   },
   {
@@ -120,7 +127,7 @@ function Navbar() {
                     <Toolbar variant="dense" className={classes.toolBar}>
                       <Logo/>
                       <Grid container justify="flex-end">
-                        {(isSM /*|| menus.length > 6*/) ? <IconButton onClick={toggleDrawerStatus}><MenuIcon/></IconButton> : <DropdownMenu/>}
+                          {(isSM) ? <IconButton onClick={toggleDrawerStatus}><MenuIcon/></IconButton> : <DropdownMenu menus={menus}/>}
                       </Grid>
                     </Toolbar>
                 </AppBar>
@@ -152,55 +159,8 @@ function recursiveFunc(item){
       return (<SubMenu title={item.title}>{item.children.map((itemChild)=>{return recursiveFunc(itemChild)})}</SubMenu>)
     }
     else{
-      return(<MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >{item.title}</Button></MenuItem>)
+      return(<MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" href={window.location.origin+item.path+"/"+item.type+"/"+item.id} >{item.title}</Button></MenuItem>)
     }
 }
-
-/*
-
-const menus = [
-        {id:1, title:"Beranda", level:1, order:1, parent:0, isParent:"Y"},
-        {id:2, title:"Perusahaan", level:1, order:2, parent:0, isParent:"Y"},
-        {id:3, title:"Investor Relation", level:1, order:3, parent:0, isParent:"Y"},
-        {id:4, title:"Produk & Layanan", level:1, order:4, parent:0, isParent:"Y"},
-        {id:5, title:"Jaringan Kantor", lavel:1, order:5, parent:0, isParent:"Y"},
-        {id:6, title:"FAQ", level:1, order:6, parent:0, isParent:"N"}
-      ];
-      
-<SubMenu title="Beranda">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" href={window.location.origin+"/beranda/berita"}>Berita</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Pengumuman</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Lelang</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Tentang Kami">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Sejarah Singkat</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Visi, Misi & Motto</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Logo Bank Aceh</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Manajemen Periode Berjalan</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Investor Relation">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan Keuangan</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan Tahunan</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Laporan GCG</Button></MenuItem>
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit" >Pemodalan & Pemegang Saham</Button></MenuItem>
-                          </SubMenu>
-                          <SubMenu title="Produk & Layanan">
-                            <SubMenu title="Dana">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Giro Bank Aceh</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Deposito Mudharabah</Button></MenuItem>
-                            </SubMenu>
-                            <SubMenu title="Pembiayaan">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Pembiayaan Muharabah</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Pembiayaan Musyarakah</Button></MenuItem>
-                            </SubMenu>
-                            <SubMenu title="Layanan">
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">RAHN (Gadai Emas)</Button></MenuItem>
-                                <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Bank Garansi Syariah</Button></MenuItem>
-                            </SubMenu>
-                          </SubMenu>
-                          <SubMenu title="Jaringan Kantor">
-                            <MenuItem><Button variant="text" style={{textTransform:"none"}} color="inherit">Jaringan Operasional</Button></MenuItem>
-                          </SubMenu>
-*/
 
 export default Navbar;

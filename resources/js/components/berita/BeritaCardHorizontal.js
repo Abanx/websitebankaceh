@@ -15,7 +15,7 @@ export default function BeritaCardHorizontal() {
             <Grid item md={9}>
                 <CardContent>
                     <Typography variant="body2" color="textPrimary">02 Juni 2021, 14:33 Wib</Typography>
-                    <Link href="#" color="primary">PENGUMUMAN PEMBIAYAAN YANG BERDAMPAK COVID-19</Link>
+                    <Link href={window.location.origin+"/berita/page"} color="primary">PENGUMUMAN PEMBIAYAAN YANG BERDAMPAK COVID-19</Link>
                     <Typography variant="body2" color="textSecondary" component="p">
                         Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
                         across all continents except Antarctica

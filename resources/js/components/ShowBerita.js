@@ -14,13 +14,13 @@ export default function ShowBerita(props) {
     const classes = useStyles();
     
     return (
-        <Grid container xs={12} justify="center" spacing={0} className={classes.root}>
+        <Grid container xs={12} justify="center" spacing={0}>
             <CssBaseline/>
             {/* Navbar Menu Segmen */}
             <Grid item xs={12}>
                 <Navbar/>
             </Grid>
-            <Grid item xs={12} style={{minHeight:400}}>
+            <Grid item xs={12} style={{minHeight:350}}>
                 <BeritaPage/>
             </Grid>
             <Grid item xs={12}>

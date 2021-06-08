@@ -19,6 +19,12 @@ export default function Footer() {
         hakCipta:{
             backgroundColor:"#808080",
             marginTop:0
+        },
+        sosmedRoot: {
+            display: 'flex',
+            '& > *': {
+            margin: theme.spacing(1),
+            },
         }
       }));
 
@@ -28,8 +34,8 @@ export default function Footer() {
             <Grid item xs={12} sm={12} md={4}>
                 <h5 className={classes.title}>Bank Aceh Syariah Terdaftar dan diawasi oleh</h5>
                 <ul style={{marginLeft:10}}>
-                    <li><Link href="#" color="textPrimary">Otoritas Jasa Keuangan</Link></li>
-                    <li><Link href="#" color="textPrimary">Lembaga Penjamin Simpanan</Link></li>
+                    <li><Link href="https://www.ojk.go.id/id/Default.aspx" color="textPrimary">Otoritas Jasa Keuangan</Link></li>
+                    <li><Link href="https://lps.go.id/" color="textPrimary">Lembaga Penjamin Simpanan</Link></li>
                 </ul>
             </Grid>
             <Grid item xs={12} sm={6} md={4}>
@@ -40,15 +46,17 @@ export default function Footer() {
                 <h5 className={classes.title}>Sosial Media</h5>
                 {/* <Typography variant="body1" style={{textAlign:"center"}} color="textSecondary" component="h5">Tautan Berguna</Typography> */}
                 <Grid container justify="center">
-                    <IconButton href="https://www.facebook.com">
-                        <FacebookIcon style={{fontSize:40, color:"blue"}}/>
-                    </IconButton>
-                    <IconButton href="https://www.twitter.com">
-                        <TwitterIcon style={{fontSize:40, color:"#259AE4"}}/>
-                    </IconButton>
-                    <IconButton href="https://www.instagram.com">
-                        <InstagramIcon style={{fontSize:40, color:"#E425CF"}}/>
-                    </IconButton>
+                    <div className={classes.sosmedRoot}>
+                        <IconButton href="https://www.facebook.com">
+                            <FacebookIcon style={{fontSize:40, color:"blue"}}/>
+                        </IconButton>
+                        <IconButton href="https://www.twitter.com">
+                            <TwitterIcon style={{fontSize:40, color:"#259AE4"}}/>
+                        </IconButton>
+                        <IconButton href="https://www.instagram.com">
+                            <InstagramIcon style={{fontSize:40, color:"#E425CF"}}/>
+                        </IconButton>
+                    </div> 
                 </Grid>
             </Grid>
             <Grid item xs={12} justify="center" className={classes.hakCipta}>

@@ -33,14 +33,14 @@ export default function CascadingHoverMenus2(props) {
                return (<Submenu popupId={item.title+"Menu"} title={item.title}>{recursiveFunc(item.children)}</Submenu>)
               }
               else{
-                return (<MenuItem onClick={()=>{popupState.close; (item.title === "Berita") ? window.location=window.location.origin+"/beranda/berita" : window.location="https://www.google.com"}}>{item.title}</MenuItem>)
+                return (<MenuItem onClick={()=>{popupState.close; console.log("Close: "+item.path); window.location = window.location.origin + item.path +"/"+item.type+"/"+item.id}}>{item.title}</MenuItem>)
               } 
             }
           );
     }
 
     return (
-        <div style={{ height: 600 }}>
+        <div style={{ height: 50 }}>
             <Button variant="text" size="large" endIcon={(menu.isParent == "Y") ? <ExpandMore/> : ""} style={{textTransform:"none"}} {...bindHover(popupState)}>
                 {menu.title}
             </Button>
