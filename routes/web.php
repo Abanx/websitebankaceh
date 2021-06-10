@@ -24,3 +24,11 @@ Route::get('/admin', function(){
 Route::get('/admin/dashboard', function(){
     return view('admin.dashboard');
 });
+
+Route::get('/admin/users', function(){
+    return view('admin.users');
+});
+
+Route::get('/admin/blogs', function(){
+    return view('admin.blogs');
+});

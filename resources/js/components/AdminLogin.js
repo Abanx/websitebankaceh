@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Button} from '@material-ui/core';
 import SignIn from './login/SignIn';
+import LogIn from './login/LogIn';
 
 export default function AdminLogin() {
     return (
         <div>
             {/* <p>React Component -- Admin Login</p> */}
             {/* <Button variant="contained" color="primary">Tombol</Button> */}
-            <SignIn/>
+            {/* <SignIn/> */}
+            <LogIn />
         </div>
     )
 }

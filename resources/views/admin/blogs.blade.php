@@ -4,15 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Bank Aceh Syariah - Dashboard</title>
+        <title>Bank Aceh Syariah - Blogs</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     </head>
     <body>
-        <!-- <h3>Bank Aceh</h3> -->
-        <div id="dashboard_div"></div>
+        <div id="blogs_div"></div>
         <script src="{{mix('js/app.js')}}"></script>
     </body>
 </html>
